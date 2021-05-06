@@ -1,0 +1,302 @@
+/*
+Theme Name: Business_theme
+Theme URI:
+Author: CCM
+Author URI: https://cadcammedia.ir/
+Description: A Business Theme.
+Version: 1.0
+*/
+/*-------------- RESET STYLE ------------------ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/*-------------- RESET STYLE ------------------ */
+@font-face {
+    font-family: 'Samim';
+    src: url('css/persian-fonts/Samim.ttf') format('truetype'),
+        url('css/persian-fonts/Samim.eot') format('eot'),
+        url('css/persian-fonts/Samim.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    text-align: right;
+    direction: rtl;
+    font-family: 'Samim';
+    background: #ffffff !important;
+    line-height: 1.6;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #777;
+    font-size: 0.875rem;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #777;
+    font-size: 0.875rem;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #777;
+    font-size: 0.875rem;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #777;
+    font-size: 0.875rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+div.panel {
+    background: #fff;
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+}
+
+div.sidebar {
+    width: 25%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #eee;
+    height: 100%;
+}
+
+div.sidebar ul li {
+    padding: 10px;
+    margin: 6px;
+    border-bottom: 1px solid #bdbdbd;
+    text-align: right;
+    background: #fafafa;
+}
+
+div.sidebar ul li a {
+    color: #555;
+    font-size: 1rem;
+}
+
+div.sidebar ul li a:after {
+    content: "\f104";
+    font-family: "fontawesome";
+    float: left;
+}
+
+div.panel-content {
+    position: absolute;
+    right: 25%;
+    width: 75%;
+    padding: 20px;
+    background: #fff;
+}
+
+table,
+table thead th,
+table tbody td {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    text-align: center;
+}
+
+input.color_picker {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+li.list-item a:hover {
+    color: turquoise !important;
+    margin: initial !important;
+    text-decoration: none !important;
+}
+
+li.list-item a {
+    width: 100%;
+}
+
+input#colorcode {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.tbl-container {
+    width: 96%;
+    text-align: center;
+    margin: 10px auto;
+    overflow-x: auto;
+}
+
+
+table.panel_tbl thead {
+    background-color: darkcyan;
+    color: #eee;
+}
+
+table.panel_tbl thead th {
+    font-weight: normal;
+    font-size: 1.125rem;
+}
+
+
+table td.colorcode span {
+    position: absolute;
+    border: 2px solid #2b2a2a;
+    border-radius: 6px;
+    width: 25px;
+    height: 25px;
+}
+
+table td.td_a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+
+table td.td_a a {
+    margin-left: 4px;
+}
+
+
+button.submit,
+button.submitted {
+    position: relative;
+    min-width: 90px;
+}
+
+button.submit>i {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-left: 10px;
+    transition: 0.2s ease;
+}
+
+button.submitted>i {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    margin-left: 10px;
+    transition: 0.2s ease;
+}
+
+button.submit:hover>i {
+    top: 25%;
+}
+
+a.adding {
+    border-radius: 1rem;
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+img.img_preview {
+    width: 75px;
+    height: 75px;
+    margin: 8px auto;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+label.rb {
+    margin: auto 6px;
+}

@@ -1,0 +1,345 @@
+/*
+Theme Name: CCM_theme
+Theme URI:
+Author: CCM
+Author URI: https://cadcammedia.ir/
+Description:
+Version: 1.0
+*/
+/* Variabels-Start */
+/* Variabels-End */
+/* Mixin-Start */
+/* Mixin-End */
+/*-------------- RESET STYLE ------------------ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/*-------------- RESET STYLE ------------------ */
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.ttf") format("truetype"), url("../fonts/Vazir.eot") format("eot"), url("../fonts/Vazir.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*:before,
+*:after {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+html[dir=rtl] .icons {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+}
+
+body {
+  text-align: right;
+  font-family: "Vazir";
+  background: #fafafa;
+  line-height: 1.6;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #777;
+  font-size: 0.875rem;
+  font-family: "Vazir";
+  padding: 10px;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #777;
+  font-size: 0.875rem;
+  font-family: "Vazir";
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #777;
+  font-size: 0.875rem;
+  padding: 10px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #777;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset !important;
+}
+
+button {
+  font-family: "Vazir";
+}
+
+.topNav {
+  position: fixed;
+  height: 60px;
+  background: teal;
+  z-index: 1000;
+}
+.topNav .navbar-brand {
+  margin: 0 40px;
+}
+.topNav .navbar-nav {
+  height: 60px;
+  width: 100%;
+}
+.topNav .navbar-nav .nav-link {
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+a.sidenav-trigger {
+  position: fixed;
+  right: 10px;
+  top: 0;
+  height: 60px;
+  z-index: 2000;
+}
+a.sidenav-trigger i {
+  line-height: 60px;
+  font-size: 2rem;
+  color: #eee;
+}
+
+ul#slide-out {
+  z-index: 3000;
+}
+
+.sidenav li.menuItem {
+  padding: 8px;
+}
+.sidenav li.menuItem:hover {
+  background-color: paleturquoise;
+  opacity: 0.8;
+}
+.sidenav li.menuItem a:hover {
+  background-color: transparent;
+}
+.sidenav .user-view {
+  font-family: "Vazir";
+  padding: 16px 8px !important;
+}
+.sidenav .user-view .infos {
+  color: silver;
+}
+.sidenav .user-view a {
+  text-align: right;
+  color: silver;
+}
+.sidenav .comment_badge {
+  width: 21px !important;
+  background: darkred;
+  margin-top: -15%;
+  font-family: Vazir;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown-menu {
+  min-width: 175px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu a {
+  padding: 0 8px;
+  margin: 0;
+  font-size: 0.875rem;
+  color: #777;
+}
+.dropdown-menu a:hover {
+  background-color: paleturquoise;
+}
+
+.dash {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+.dash .card {
+  text-align: center;
+  margin: 1rem;
+  width: 30%;
+  padding: 40px;
+}
+.dash .card .card-text {
+  font-size: 1rem;
+}
+.dash .card .card-title {
+  font-size: 1.5rem;
+}
+
+table td,th{
+  text-align: center;
+}
+
+#editProfile {
+  margin-top: 100px;
+  height: 500px;
+  overflow: scroll;
+  padding: 10px;
+  border:1px dashed #bdbdbd;
+}
+#editProfile .form-group{
+  padding: 24px;
+}
+
+.invalid-feedback{
+  color: red;
+  margin: 10px auto;
+}
+
+
+
+input#images{
+  width: 90%;
+  margin: auto 8px;
+}
+
+button.submit{
+  min-width: 65px;
+  position: relative;
+}
+
+button.submit i{
+  position: absolute;
+  top: -45px;
+  opacity: 0;
+  transition: ease 0.15s;
+}
+
+button.submit:hover i{
+  top: 7px;
+  opacity: 1;
+}
+
+
+nav.topNav {
+  border-radius: 0;
+}
+
+#addSpec{
+  border: 1px dashed #ccc;
+  padding: 40px;
+  margin: 24px auto;
+}
+#editSpec{
+  display: none;
+  border: 1px dotted orange;
+  padding: 40px;
+  margin: 24px auto;
+}
+
+.specifications li{
+  border-radius: 6px;
+  background: orange;
+  padding: 10px;
+  margin: auto 6px;
+  color: #eee;
+}
+
+.specOp a{
+  color: #fff;
+  font-size: 1.125rem;
+  margin: auto 4px;
+  vertical-align: middle;
+}
+
+
+/*# sourceMappingURL=panelStyle.css.map */
