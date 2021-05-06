@@ -20,7 +20,7 @@ class CreateOffersTable extends Migration
             $table->double('sumprice', 15, 3);
             $table->double('sendprice', 10, 3);
             $table->double('discount', 5, 3);
-            $table->double('tax', 5, 3);
+            $table->double('tax', 15, 3);
             $table->double('total', 15, 3);
             $table->string('description', 300)->nullable();
             $table->integer('user_id')->unsigned();
